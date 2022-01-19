@@ -190,7 +190,6 @@ class controller {
                 document.querySelector(n).style.color = 'white';
                 bt = "1";
                 
-                
             }
         };
     }
