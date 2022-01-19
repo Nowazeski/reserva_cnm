@@ -2,23 +2,76 @@
     padding: 0px;
     margin: 0px;
     -webkit-user-drag: none;
+    background-color: black;
     
+}
+.container h1{
+background-image: linear-gradient(to bottom, rgb(130, 36, 224), rgb(29, 153, 255), rgb(41, 241, 221));
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  /* Alguns navegadores precisam do prefixo */
+  -webkit-background-clip: text; 
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 100px;
+    margin-bottom: 100px;
+
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+ 
 }
 main button{
     padding:8px;
     width: 50px;
     height: 50px;
-    background-color: aqua;
+    background-color: rgb(11, 155, 155);
     border-radius: 8px;
     border: solid 1px;
-    cursor: pointer;
+    margin: 2px;
+    color:white;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 main button:hover{
     background-color: yellow;
+    color: black;
+    border:solid rgb(248, 248, 248);
+    cursor: pointer;
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+#bt-a,#bt-b,#bt-c,#bt-d,#bt-e,#bt-f,#bt-g,#bt-h,#bt-i{
+    background-color: rgba(139, 139, 139, 0.548);
+    color:white;
+    border:solid black;
+    cursor:default;
+}
+#bt-a:hover,#bt-b:hover,#bt-c:hover,#bt-d:hover,#bt-e:hover,#bt-f:hover,#bt-g:hover,#bt-h:hover,#bt-i:hover{
+    cursor:default;
+}
+.vazio{
+    background-color: rgb(1, 31, 31);
+    color: black;
+    cursor:default;
+}
+.vazio:hover{
+    background-color: rgb(1, 31, 31);
+    cursor: default;
+    border:none;
 }
